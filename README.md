@@ -62,7 +62,33 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
   * ./a.out +bscvcd
   * To visualize the waveforms and latency,use the following command:
   * gtkwave dump.vcd &
+    
   * **Synthesis**
+  1. For Synthesis, We dont have to use Test bench file.
+  2. clone this repository.
+  3. cd Pipelined-64-bit-signed-IMAC/Sources/IMAC_with_3stage_pipeline
+  4. Run the following commands:
+  5. bsc -u -verilog -g $ (TopModule) $ (TopFile)
+    
+        for 3 stage pipeline IMAC:bsc -u -verilog -g mkBooth_wallace_3 booth_wallace_3.bsv
+    
+        for 4 stage pipeline IMAC:bsc -u -verilog -g mkBooth_wallace_4 booth_wallace_4.bsv
+  6. cd ~/Openlane
+  7. make mount
+  8. TO add design into openlane for 3 stage pipeline IMAC: ./flow.tcl -design mkBooth_wallace_3 -init_design_config -add_to_designs -src "$ (verilog file path generated in step 5)"
+     TO add design into openlane for 4 stage pipeline IMAC: ./flow.tcl -design mkBooth_wallace_4 -init_design_config -add_to_designs -src "$ (verilog file path generated in step 5)"
+  9.To run flow in a interactive mode :
+       for 3 stage pipeline IMAC: ./flow.tcl -design mkBooth_wallace_3 -interactive
+       for 4 stage pipeline IMAC: ./flow.tcl -design mkBooth_wallace_4 -interactive
+  10. To run synthesis,type folowing commands:
+       run_synthesis
+  11.Exit from the flow as we need only synthesis
+       exit
+  12. Area reports will shown at following path:
+       less desings/mkBooth_wallace_3/runs/$ (run_time_stamp)/reports/synthesis/$ (synthesis.area.stat.rpt)
+     
+       
+     
 
 
                                                                               
