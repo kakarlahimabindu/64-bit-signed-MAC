@@ -47,7 +47,7 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
   * **Simulation:**
   * clone this repository.
   * Run the following commands.
-  * bsc -u -verilog -g $(TopModule) $(TopFile)
+  * bsc -u -verilog -g $ (TopModule) $ (TopFile)
     (ie for 3 stage pipeline IMAC:bsc -u -verilog -g mkBooth_wallace_3tb 64-bit-signed-MAC
 
 
