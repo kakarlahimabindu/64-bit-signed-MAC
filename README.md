@@ -16,9 +16,8 @@ Final product of multiplication is obtained by adding partial products.
 **pipelining for stage 1 results:**
 Partial products obtained from the reduced booth's algorithm have been sent to next level with a pipeline stage in between.
 
-If area is the constraint, this pipeline stage can be removed with a trade off in frequency.
+If area is the constraint, this pipeline stage can be removed with a trade off in frequency.If frequency is the constraint, then this pipeline stage can be retained.
 
-Otherwise if frequency is the constraint, then this pipeline stage can be retained.
 we developed both the versions of the code.
 ## Stage 2-wallace tree structure to add partial products
 
