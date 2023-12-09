@@ -22,12 +22,12 @@ we developed both the versions of the code.
 ## Stage 2-wallace tree structure to add partial products
 partial products(pp's) are added using carry save adders formed like a wallace tree.This wallace tree has splitted into two stages with a pipeline in between.
 
-First stage contains 18 pp's addition.The results of this stage are given to next stage of 14 pp's addition using pipeline.
+First stage contains 18 pp's addition.The results of this stage are given to next stage of 14 pp's addition using pipeline(pipeline stage 2 in above diagram).
 
 Ripple carry adder is used to add the last pp with previous stage carry's and sums(to get the final multipiled output).
 
 **pipelining for stage 2 results:**
-The multiplied output from ripple carry adder has been pipelined.
+The multiplied output from ripple carry adder has been pipelined(pipeline stage 3 in above diagram).
 ## Stage 3-Ripple carry adder for accumulator
 The pipelined result from stage 2 is given to ripple carry adder to accumulate with previous results.
 
