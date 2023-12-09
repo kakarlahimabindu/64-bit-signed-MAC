@@ -75,10 +75,16 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
         for 4 stage pipeline IMAC:bsc -u -verilog -g mkBooth_wallace_4 booth_wallace_4.bsv
   6. cd ~/Openlane
   7. make mount
-  8. TO add design into openlane for 3 stage pipeline IMAC: ./flow.tcl -design mkBooth_wallace_3 -init_design_config -add_to_designs -src "$ (verilog file path generated in step 5)"
-     TO add design into openlane for 4 stage pipeline IMAC: ./flow.tcl -design mkBooth_wallace_4 -init_design_config -add_to_designs -src "$ (verilog file path generated in step 5)"
+  8. TO add design into openlane for 3 stage pipeline IMAC:
+
+     ./flow.tcl -design mkBooth_wallace_3 -init_design_config -add_to_designs -src "$ (verilog file path generated in step 5)"
+     TO add design into openlane for 4 stage pipeline IMAC:
+
+     ./flow.tcl -design mkBooth_wallace_4 -init_design_config -add_to_designs -src "$ (verilog file path generated in step 5)"
   9.To run flow in a interactive mode :
+
        for 3 stage pipeline IMAC: ./flow.tcl -design mkBooth_wallace_3 -interactive
+     
        for 4 stage pipeline IMAC: ./flow.tcl -design mkBooth_wallace_4 -interactive
   10. To run synthesis,type folowing commands:
        run_synthesis
