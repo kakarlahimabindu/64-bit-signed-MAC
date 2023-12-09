@@ -70,7 +70,7 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
   4. Run the following commands:
   5. bsc -u -verilog -g $ (TopModule) $ (TopFile)
     
-        for 3 stage pipeline IMAC:bsc -u -verilog -g mkBooth_wallace_3 booth_wallace_3.bsv
+        'for 3 stage pipeline IMAC:bsc -u -verilog -g mkBooth_wallace_3 booth_wallace_3.bsv'
     
         for 4 stage pipeline IMAC:bsc -u -verilog -g mkBooth_wallace_4 booth_wallace_4.bsv
   6. cd ~/Openlane
