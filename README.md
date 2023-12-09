@@ -20,6 +20,9 @@ If area is the constraint, this pipeline stage can be removed with a trade off i
 
 we developed both the versions of the code.
 ## Stage 2-wallace tree structure to add partial products
+partial products(pp's) are added using carry save adders formed like a wallace tree.This wallace tree has splitted into two stages with a pipeline in between.
+
+First stage contains 18 pp's addition.The results of this stage are given to next stage of 14 pp's addition using pipeline.
 
 
 
