@@ -67,6 +67,7 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
   1. For Synthesis, We dont have to use Test bench file.
   2. clone this repository.
   3. `cd Pipelined-64-bit-signed-IMAC/Sources/IMAC_with_3stage_pipeline` for 3stage_pipeline
+     
       `cd Pipelined-64-bit-signed-IMAC/Sources/IMAC_with_4stage_pipeline` for 4stage_pipeline
   5. Run the following commands:
   6. bsc -u -verilog -g $ (TopModule) $ (TopFile)
