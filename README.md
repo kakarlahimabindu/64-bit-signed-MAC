@@ -82,15 +82,14 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
      To add design into openlane for 4 stage pipeline IMAC:
 
      ./flow.tcl -design mkBooth_wallace_4 -init_design_config -add_to_designs -src "$ (verilog file path generated in step V)"
-     
-  9.To run flow in a interactive mode :
+  9. To run flow in a interactive mode :
 
        for 3 stage pipeline IMAC: ./flow.tcl -design mkBooth_wallace_3 -interactive
      
        for 4 stage pipeline IMAC: ./flow.tcl -design mkBooth_wallace_4 -interactive
   10. To run synthesis,type folowing commands:
        run_synthesis
-  11.Exit from the flow as we need only synthesis
+  11. Exit from the flow as we need only synthesis
        exit
   12. Area reports will shown at following path:
        less desings/mkBooth_wallace_3/runs/$ (run_time_stamp)/reports/synthesis/$ (synthesis.area.stat.rpt)
