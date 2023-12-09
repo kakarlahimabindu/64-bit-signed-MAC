@@ -31,7 +31,7 @@ module mkBooth_wallace_4tb(Empty);
   count<=count+1;
   let o= obj.receive();
   $display("input1 is:%h input2 is:%h accum output is:%h",p,q,o);
-  if(count>7)
+  if(count>8)
     $finish(0);
  endrule
 endmodule
