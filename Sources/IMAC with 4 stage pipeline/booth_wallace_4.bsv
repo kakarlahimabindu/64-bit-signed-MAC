@@ -1,4 +1,4 @@
-package wallace_test;
+package booth_wallace_4;
 import Vector::*;
 
 interface Ifc;
@@ -7,7 +7,7 @@ interface Ifc;
 endinterface
 
 (* synthesize *)
-module mkWallace_test(Ifc);
+module mkbooth_wallace_4(Ifc);
  Reg#(Bit#(18)) result_pl <- mkReg(0);
  Reg#(Bit#(128)) result_mul <- mkReg(0);
  Reg#(Bit#(128)) accum_out <- mkReg(0);
