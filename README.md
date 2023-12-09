@@ -44,7 +44,7 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
 * The last pp addition is done using ripple carry adder, because it takes less area when compared to others.
 
   # How to run the code:
-  * **Simulation:**
+  **Simulation:**
   * clone this repository.
   * `cd Pipelined-64-bit-signed-IMAC/Sources/IMAC_with_3stage_pipeline`
   * Run the following commands:
@@ -63,7 +63,7 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
   * To visualize the waveforms and latency,use the following command:
   * `gtkwave dump.vcd &`
     
-  * **Synthesis**
+ **Synthesis**
   1. For Synthesis, We dont have to use Test bench file.
   2. clone this repository.
   3. `cd Pipelined-64-bit-signed-IMAC/Sources/IMAC_with_3stage_pipeline` for 3stage_pipeline
