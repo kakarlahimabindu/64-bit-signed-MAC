@@ -92,6 +92,7 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
   11. Exit from the flow as we need only synthesis:
        `exit`
   12. Area reports will shown at following path:
+      
        less desings/mkBooth_wallace_3/runs/$ (run_time_stamp)/reports/synthesis/$ (synthesis.area.stat.rpt)
      
        
