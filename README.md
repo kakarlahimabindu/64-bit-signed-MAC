@@ -13,7 +13,7 @@ The key optimization in this Algorithm is to identify and combine certain bit pa
 For‘n’ bit number we get ‘n/2’ partial products using this algorithm. Since, the number of partial products are reduced, speed of multiplication process increases. 
 Final product of multiplication is obtained by adding partial products.
 
-**pipelining for stage 1 results:**
+* **pipelining for stage 1 results:**
 Partial products obtained from the reduced booth's algorithm have been sent to next level with a pipeline stage in between.
 
 If area is the constraint, this pipeline stage can be removed with a trade off in frequency.If frequency is the constraint, then this pipeline stage can be retained.
