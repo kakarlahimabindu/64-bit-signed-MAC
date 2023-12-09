@@ -1,5 +1,5 @@
-# 64-bit-signed-MAC
-Pipelined 64 bit signed Integer Multiply and Accumulate(IMAC)
+# Pipelined 64 bit signed Integer Multiply and Accumulate(IMAC)
+
 # Project structure
 ![Screenshot (11)](https://github.com/kakarlahimabindu/64-bit-signed-MAC/assets/153276932/9440e864-b444-4152-99dc-224b536d8b1c)
 
