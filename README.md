@@ -37,6 +37,12 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
 
 * For addition of partial products, wallace tree structure(using carry save adders) gives best results in terms of frequency and area when compared to others.
 
+* Since each partial product has only 64 data bits and remaining are sign-extension bits. While doing addition, first sign extension bit of partial products are added and that value is assigned to remaining sign bits of the corresponding result.This decision helps in reducing the area by eliminating full adders for sign extension bit addition in all pp's.
+
+* In radix-4 modified booth's algorithm each partial product is shifted to left by 2bits.This property helps in making use of half-adders in place of some full-adders which again reduces the area.
+
+* The last pp addition is done using ripple carry adder, because it takes less area when compared to others.
+
 
 
                                                                               
