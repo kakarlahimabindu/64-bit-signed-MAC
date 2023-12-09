@@ -89,7 +89,7 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
        for 4 stage pipeline IMAC: ./flow.tcl -design mkBooth_wallace_4 -interactive
   10. To run synthesis,type folowing commands:
        run_synthesis
-  11. Exit from the flow as we need only synthesis
+  11. Exit from the flow as we need only synthesis:
        exit
   12. Area reports will shown at following path:
        less desings/mkBooth_wallace_3/runs/$ (run_time_stamp)/reports/synthesis/$ (synthesis.area.stat.rpt)
