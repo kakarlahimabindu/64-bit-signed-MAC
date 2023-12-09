@@ -30,6 +30,13 @@ Ripple carry adder is used to add the last pp with previous stage carry's and su
 The multiplied output from ripple carry adder has been pipelined(pipeline stage 3 in above diagram).
 ## Stage 3-Ripple carry adder for accumulator
 The pipelined result from stage 2 is given to ripple carry adder to accumulate with previous results.
+# Design Decisions
+Decision of choosing modified booth's algorithm is based on its advantage over other algorithms(ie basic booth's algorithm) in terms of number of partial products.
+
+Radix-4 booth algorithm takes less area than other radix-n booth algorithms for higher bit inputs.
+
+For addition of partial products, wallace tree structure(using carry save adders) gives best results in terms of frequency and area when compared to others.
+
 
 
                                                                               
