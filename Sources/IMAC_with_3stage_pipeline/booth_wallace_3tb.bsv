@@ -6,7 +6,7 @@ module mkBooth_wallace_3tb(Empty);
  Reg#(Bit#(5)) i <- mkReg(0);
  Reg#(Bit#(5)) count<-mkReg(0);
  Reg#(Bit#(1)) rst<-mkReg(0);
- Ifc obj <- mkBooth_wallce_3;
+ Ifc obj <- mkBooth_wallace_3;
  Bit#(64) arr[10];
   arr[0]=64'd5;
   arr[1]=64'd4;
