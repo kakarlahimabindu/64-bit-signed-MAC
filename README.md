@@ -50,12 +50,12 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
   * Run the following commands:
   * bsc -u -verilog -g $ (TopModule) $ (TopFile)
     
-    (ie for 3 stage pipeline IMAC:bsc -u -verilog -g mkBooth_wallace_3tb booth_wallace_3tb.bsv
+    (for 3 stage pipeline IMAC:bsc -u -verilog -g mkBooth_wallace_3tb booth_wallace_3tb.bsv
     
         for 4 stage pipeline IMAC:bsc -u -verilog -g mkBooth_wallace_4tb booth_wallace_4tb.bsv)
   * bsc -e $ (TopModule) -verilog -vsim iverilog $ (TopModule).v
     
-    (ie for 3 stage pipeline IMAC:bsc -e mkBooth_wallace_3tb -verilog -vsim iverilog mkBooth_wallace_3tb.v
+    (for 3 stage pipeline IMAC:bsc -e mkBooth_wallace_3tb -verilog -vsim iverilog mkBooth_wallace_3tb.v
     
         for 4 stage pipeline IMAC:bsc -e mkBooth_wallace_4tb -verilog -vsim iverilog mkBooth_wallace_4tb.v)
   * Run the following command to get the output values and dump the results in dump.vcd:
