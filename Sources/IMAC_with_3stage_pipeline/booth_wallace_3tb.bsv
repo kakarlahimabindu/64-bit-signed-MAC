@@ -1,6 +1,6 @@
 package booth_wallace_3tb;
 import booth_wallace_3::*;
-module mkWallacetb(Empty);
+module mkBooth_wallace_3tb(Empty);
  Reg#(Bit#(64)) p <- mkReg(0);
  Reg#(Bit#(64)) q <- mkReg(0);
  Reg#(Bit#(5)) i <- mkReg(0);
