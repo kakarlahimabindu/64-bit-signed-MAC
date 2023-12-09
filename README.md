@@ -1,7 +1,7 @@
 # 64-bit-signed-MAC
 Pipelined 64 bit signed Integer Multiply and Accumulate(IMAC)
 # Project structure
-![Screenshot (11)](https://github.com/kakarlahimabindu/64-bit-signed-MAC/assets/153276932/4562d985-71e6-4052-9a1d-c8512964d604)
+![Screenshot (11)](https://github.com/kakarlahimabindu/64-bit-signed-MAC/assets/153276932/9440e864-b444-4152-99dc-224b536d8b1c)
 
 The above image shows the flow of our project.It contains totally three main stages.1)partial product formation 2)wallace tree structure to add partial products 3)ripple carry adder for accumulator.
 ## Stage 1-partial products formation using Reduced Booth Algorithm
