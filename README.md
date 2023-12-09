@@ -78,6 +78,7 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
   8. TO add design into openlane for 3 stage pipeline IMAC:
 
      ./flow.tcl -design mkBooth_wallace_3 -init_design_config -add_to_designs -src "$ (verilog file path generated in step 5)"
+     
      TO add design into openlane for 4 stage pipeline IMAC:
 
      ./flow.tcl -design mkBooth_wallace_4 -init_design_config -add_to_designs -src "$ (verilog file path generated in step 5)"
