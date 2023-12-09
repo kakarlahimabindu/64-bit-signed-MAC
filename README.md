@@ -46,7 +46,7 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
   ## How to run the code:
   * **Simulation:**
   * clone this repository.
-  * 'cd Pipelined-64-bit-signed-IMAC/Sources/IMAC_with_3stage_pipeline'
+  * `cd Pipelined-64-bit-signed-IMAC/Sources/IMAC_with_3stage_pipeline`
   * Run the following commands:
   * bsc -u -verilog -g $ (TopModule) $ (TopFile)
     
@@ -59,9 +59,9 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
     
         for 4 stage pipeline IMAC:bsc -e mkBooth_wallace_4tb -verilog -vsim iverilog mkBooth_wallace_4tb.v
   * Run the following command to get the output values and dump the results in dump.vcd:
-  * './a.out +bscvcd'
+  * `./a.out +bscvcd`
   * To visualize the waveforms and latency,use the following command:
-  * 'gtkwave dump.vcd &'
+  * `gtkwave dump.vcd &`
     
   * **Synthesis**
   1. For Synthesis, We dont have to use Test bench file.
