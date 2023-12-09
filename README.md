@@ -43,6 +43,13 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
 
 * The last pp addition is done using ripple carry adder, because it takes less area when compared to others.
 
+  ## How to run the code:
+  * **Simulation:**
+  * clone this repository.
+  * Run the following commands.
+  * bsc -u -verilog -g $(TopModule) $(TopFile)
+    (ie for 3 stage pipeline IMAC:bsc -u -verilog -g mkBooth_wallace_3tb 64-bit-signed-MAC
+
 
 
                                                                               
