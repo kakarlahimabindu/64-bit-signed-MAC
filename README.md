@@ -46,7 +46,9 @@ The pipelined result from stage 2 is given to ripple carry adder to accumulate w
   # How to run the code:
   **Simulation:**
   * clone this repository.
-  * `cd Pipelined-64-bit-signed-IMAC/Sources/IMAC_with_3stage_pipeline`
+  * `cd Pipelined-64-bit-signed-IMAC/Sources/IMAC_with_3stage_pipeline` for 3 stage pipeline IMAC
+
+    `cd Pipelined-64-bit-signed-IMAC/Sources/IMAC_with_4stage_pipeline` for 4 stage pipeline IMAC   
   * Run the following commands:
   * bsc -u -verilog -g $ (TopModule) $ (TopFile)
     
