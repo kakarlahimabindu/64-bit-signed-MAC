@@ -18,7 +18,7 @@ Partial products obtained from the reduced booth's algorithm have been sent to n
 
 If area is the constraint, this pipeline stage can be removed with a trade off in frequency.If frequency is the constraint, then this pipeline stage can be retained.
 
-** we developed both the versions of the code and are available in sources folder of this repository **.
+**we developed both the versions of the code and are available in sources folder of this repository**.
 ## Stage 2-wallace tree structure to add partial products
 partial products(pp's) are added using carry save adders formed like a wallace tree.This wallace tree has splitted into two stages with a pipeline in between.
 
